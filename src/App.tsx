@@ -11,10 +11,12 @@ import { CartProvider } from './contexts/CartContext';
 import { SettingsProvider } from './contexts/SettingsContext';
 import { UserProvider } from './contexts/UserContext';
 import { AuthProvider } from './contexts/AuthContext';
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 export default function App() {
   return (
     <BrowserRouter>
+      <SpeedInsights />
       <AuthProvider>
         <SettingsProvider>
           <UserProvider>
