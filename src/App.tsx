@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { HomePage } from './pages/HomePage';
 import { LoginPage } from './pages/auth/LoginPage';
 import { RegisterPage } from './pages/auth/RegisterPage';
@@ -30,6 +31,7 @@ export default function App() {
                 <Route path="/favorites" element={<FavoritesPage />} />
                 <Route path="*" element={<Navigate to="/" replace />} />
               </Routes>
+              <SpeedInsights />
             </CartProvider>
           </UserProvider>
         </SettingsProvider>
