@@ -1,0 +1,208 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - link "Marketplace" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img [ref=e9]
+        - generic [ref=e12]: Marketplace
+      - generic [ref=e14]:
+        - textbox "Szukaj..." [ref=e15]
+        - img
+        - button "Szukaj" [ref=e16]
+      - generic [ref=e17]:
+        - link "Moje konto" [ref=e18] [cursor=pointer]:
+          - /url: /account
+          - img [ref=e19]
+        - link "Obserwowane" [ref=e22] [cursor=pointer]:
+          - /url: /favorites
+          - img [ref=e23]
+        - link "Koszyk" [ref=e25] [cursor=pointer]:
+          - /url: /checkout
+          - img [ref=e26]
+  - generic [ref=e32]:
+    - button "Wszystkie" [ref=e33]:
+      - generic [ref=e34]: Wszystkie
+    - button "Elektronika" [active] [ref=e35]:
+      - img [ref=e36]
+      - generic [ref=e38]: Elektronika
+    - button "Dom" [ref=e39]:
+      - img [ref=e40]
+      - generic [ref=e43]: Dom
+    - button "Sport" [ref=e44]:
+      - img [ref=e45]
+      - generic [ref=e51]: Sport
+    - button "Motoryzacja" [ref=e52]:
+      - img [ref=e53]
+      - generic [ref=e57]: Motoryzacja
+    - button "Dzieci" [ref=e58]:
+      - img [ref=e59]
+      - generic [ref=e62]: Dzieci
+    - button "Książki" [ref=e63]:
+      - img [ref=e64]
+      - generic [ref=e66]: Książki
+  - generic [ref=e68]:
+    - complementary [ref=e69]:
+      - generic [ref=e70]:
+        - heading "Filtry" [level=3] [ref=e71]
+        - generic [ref=e72]:
+          - generic [ref=e73]: Cena (zł)
+          - generic [ref=e74]:
+            - spinbutton [ref=e75]: "0"
+            - spinbutton [ref=e76]: "10000"
+          - generic [ref=e77]:
+            - generic [ref=e78]: 0 zł
+            - generic [ref=e79]: 10000 zł
+          - slider [ref=e80]: "10000"
+        - generic [ref=e81]:
+          - generic [ref=e82]: Stan
+          - generic [ref=e83]:
+            - generic [ref=e84] [cursor=pointer]:
+              - checkbox "Nowe" [ref=e85]
+              - generic [ref=e86]: Nowe
+            - generic [ref=e87] [cursor=pointer]:
+              - checkbox "Używane" [ref=e88]
+              - generic [ref=e89]: Używane
+            - generic [ref=e90] [cursor=pointer]:
+              - checkbox "Uszkodzone" [ref=e91]
+              - generic [ref=e92]: Uszkodzone
+        - generic [ref=e93]:
+          - generic [ref=e94]: Lokalizacja
+          - textbox "Wpisz miasto" [ref=e95]
+        - generic [ref=e96]:
+          - generic [ref=e97]: Dostawa
+          - generic [ref=e98]:
+            - generic [ref=e99] [cursor=pointer]:
+              - checkbox "Odbiór osobisty" [ref=e100]
+              - generic [ref=e101]: Odbiór osobisty
+            - generic [ref=e102] [cursor=pointer]:
+              - checkbox "Wysyłka" [ref=e103]
+              - generic [ref=e104]: Wysyłka
+            - generic [ref=e105] [cursor=pointer]:
+              - checkbox "Kurier" [ref=e106]
+              - generic [ref=e107]: Kurier
+    - main [ref=e108]:
+      - generic [ref=e109]:
+        - heading "Elektronika" [level=2] [ref=e110]
+        - generic [ref=e111]: 4 ogłoszeń
+      - generic [ref=e112]:
+        - link "Laptop Dell XPS 15 Dodaj do ulubionych Laptop Dell XPS 15 4500 zł Warszawa" [ref=e113] [cursor=pointer]:
+          - /url: /product/1
+          - generic [ref=e114]:
+            - generic [ref=e115]:
+              - img "Laptop Dell XPS 15" [ref=e116]
+              - button "Dodaj do ulubionych" [ref=e117]:
+                - img [ref=e118]
+            - generic [ref=e120]:
+              - heading "Laptop Dell XPS 15" [level=3] [ref=e121]
+              - generic [ref=e123]: 4500 zł
+              - generic [ref=e124]:
+                - img [ref=e125]
+                - generic [ref=e128]: Warszawa
+        - link "iPhone 14 Pro 256GB Dodaj do ulubionych iPhone 14 Pro 256GB 3200 zł Kraków" [ref=e129] [cursor=pointer]:
+          - /url: /product/2
+          - generic [ref=e130]:
+            - generic [ref=e131]:
+              - img "iPhone 14 Pro 256GB" [ref=e132]
+              - button "Dodaj do ulubionych" [ref=e133]:
+                - img [ref=e134]
+            - generic [ref=e136]:
+              - heading "iPhone 14 Pro 256GB" [level=3] [ref=e137]
+              - generic [ref=e139]: 3200 zł
+              - generic [ref=e140]:
+                - img [ref=e141]
+                - generic [ref=e144]: Kraków
+        - link "Aparat Canon EOS R6 Dodaj do ulubionych Aparat Canon EOS R6 6500 zł Wrocław" [ref=e145] [cursor=pointer]:
+          - /url: /product/5
+          - generic [ref=e146]:
+            - generic [ref=e147]:
+              - img "Aparat Canon EOS R6" [ref=e148]
+              - button "Dodaj do ulubionych" [ref=e149]:
+                - img [ref=e150]
+            - generic [ref=e152]:
+              - heading "Aparat Canon EOS R6" [level=3] [ref=e153]
+              - generic [ref=e155]: 6500 zł
+              - generic [ref=e156]:
+                - img [ref=e157]
+                - generic [ref=e160]: Wrocław
+        - link "Słuchawki Sony WH-1000XM5 Dodaj do ulubionych Słuchawki Sony WH-1000XM5 1200 zł Warszawa" [ref=e161] [cursor=pointer]:
+          - /url: /product/8
+          - generic [ref=e162]:
+            - generic [ref=e163]:
+              - img "Słuchawki Sony WH-1000XM5" [ref=e164]
+              - button "Dodaj do ulubionych" [ref=e165]:
+                - img [ref=e166]
+            - generic [ref=e168]:
+              - heading "Słuchawki Sony WH-1000XM5" [level=3] [ref=e169]
+              - generic [ref=e171]: 1200 zł
+              - generic [ref=e172]:
+                - img [ref=e173]
+                - generic [ref=e176]: Warszawa
+  - contentinfo [ref=e177]:
+    - generic [ref=e178]:
+      - generic [ref=e179]:
+        - generic [ref=e180]:
+          - heading "O nas" [level=3] [ref=e181]
+          - list [ref=e182]:
+            - listitem [ref=e183]:
+              - link "Kim jesteśmy" [ref=e184] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e185]:
+              - link "Kariera" [ref=e186] [cursor=pointer]:
+                - /url: /careers
+            - listitem [ref=e187]:
+              - link "Dla prasy" [ref=e188] [cursor=pointer]:
+                - /url: /press
+            - listitem [ref=e189]:
+              - link "Kontakt" [ref=e190] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e191]:
+          - heading "Pomoc" [level=3] [ref=e192]
+          - list [ref=e193]:
+            - listitem [ref=e194]:
+              - link "FAQ" [ref=e195] [cursor=pointer]:
+                - /url: /faq
+            - listitem [ref=e196]:
+              - link "Wysyłka" [ref=e197] [cursor=pointer]:
+                - /url: /shipping
+            - listitem [ref=e198]:
+              - link "Zwroty" [ref=e199] [cursor=pointer]:
+                - /url: /returns
+            - listitem [ref=e200]:
+              - link "Wsparcie" [ref=e201] [cursor=pointer]:
+                - /url: /support
+        - generic [ref=e202]:
+          - heading "Informacje prawne" [level=3] [ref=e203]
+          - list [ref=e204]:
+            - listitem [ref=e205]:
+              - link "Regulamin" [ref=e206] [cursor=pointer]:
+                - /url: /terms
+            - listitem [ref=e207]:
+              - link "Polityka prywatności" [ref=e208] [cursor=pointer]:
+                - /url: /privacy
+            - listitem [ref=e209]:
+              - link "Polityka cookies" [ref=e210] [cursor=pointer]:
+                - /url: /cookies
+        - generic [ref=e211]:
+          - heading "Śledź nas" [level=3] [ref=e212]
+          - generic [ref=e213]:
+            - link "Facebook" [ref=e214] [cursor=pointer]:
+              - /url: https://facebook.com
+              - img [ref=e215]
+            - link "Twitter" [ref=e217] [cursor=pointer]:
+              - /url: https://twitter.com
+              - img [ref=e218]
+            - link "Instagram" [ref=e220] [cursor=pointer]:
+              - /url: https://instagram.com
+              - img [ref=e221]
+            - link "LinkedIn" [ref=e224] [cursor=pointer]:
+              - /url: https://linkedin.com
+              - img [ref=e225]
+      - generic [ref=e230]:
+        - paragraph [ref=e231]: © 2024 Marketplace. Wszystkie prawa zastrzeżone.
+        - generic [ref=e232]:
+          - paragraph [ref=e233]: "Projekt: WSB Merito"
+          - paragraph [ref=e234]: "Autorzy: Rafał Bojarski, Przemysław Bladowski, Jakub Dampc, Kacper Rynkiewicz, Nikita Kostiuchok"
+```

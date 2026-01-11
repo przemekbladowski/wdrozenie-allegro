@@ -1,0 +1,2372 @@
+{
+  "config": {
+    "configFile": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/playwright.config.ts",
+    "rootDir": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 5
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "tests/dokumentacja_testow"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "tests/dokumentacja_testow/report.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 5
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 5
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 5
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 5
+        },
+        "id": "Mobile Chrome",
+        "name": "Mobile Chrome",
+        "testDir": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 5
+        },
+        "id": "Mobile Safari",
+        "name": "Mobile Safari",
+        "testDir": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "changed",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 5,
+    "webServer": {
+      "command": "npm run dev",
+      "url": "http://localhost:3000",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "example.spec.ts",
+      "file": "example.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "has title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 776,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-11T14:01:43.025Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/example-has-title-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/example-has-title-chromium/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-b06063a3e613764d08f8",
+          "file": "example.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "get started link",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 958,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-11T14:01:43.035Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/example-get-started-link-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/example-get-started-link-chromium/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-274e97907a6e3638a22f",
+          "file": "example.spec.ts",
+          "line": 10,
+          "column": 5
+        },
+        {
+          "title": "has title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 1210,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-11T14:01:45.436Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/example-has-title-firefox/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/example-has-title-firefox/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-f53a5ad453cd33dc57d5",
+          "file": "example.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "get started link",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 1737,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-11T14:01:45.436Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/example-get-started-link-firefox/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/example-get-started-link-firefox/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-bfe080d6fe34297f494c",
+          "file": "example.spec.ts",
+          "line": 10,
+          "column": 5
+        },
+        {
+          "title": "has title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 1389,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-11T14:01:50.245Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/example-has-title-webkit/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/example-has-title-webkit/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-4a26ebd06a6b810edcc2",
+          "file": "example.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "get started link",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1279,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-11T14:01:51.007Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/example-get-started-link-webkit/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/example-get-started-link-webkit/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-1eb159041d56409ed83c",
+          "file": "example.spec.ts",
+          "line": 10,
+          "column": 5
+        },
+        {
+          "title": "has title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Mobile Chrome",
+              "projectName": "Mobile Chrome",
+              "results": [
+                {
+                  "workerIndex": 14,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 525,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-11T14:01:54.433Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/example-has-title-Mobile-Chrome/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/example-has-title-Mobile-Chrome/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-b59684751ba4e0c326d2",
+          "file": "example.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "get started link",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Mobile Chrome",
+              "projectName": "Mobile Chrome",
+              "results": [
+                {
+                  "workerIndex": 15,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 680,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-11T14:01:54.559Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/example-get-started-link-Mobile-Chrome/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/example-get-started-link-Mobile-Chrome/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-20751165d522b4e98010",
+          "file": "example.spec.ts",
+          "line": 10,
+          "column": 5
+        },
+        {
+          "title": "has title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Mobile Safari",
+              "projectName": "Mobile Safari",
+              "results": [
+                {
+                  "workerIndex": 18,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 674,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-11T14:01:56.905Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/example-has-title-Mobile-Safari/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/example-has-title-Mobile-Safari/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-2fe6c330d7850c262360",
+          "file": "example.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "get started link",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Mobile Safari",
+              "projectName": "Mobile Safari",
+              "results": [
+                {
+                  "workerIndex": 19,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 840,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-11T14:01:57.087Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/example-get-started-link-Mobile-Safari/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/example-get-started-link-Mobile-Safari/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-79cc3d222f94cc39c750",
+          "file": "example.spec.ts",
+          "line": 10,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "interactions.spec.ts",
+      "file": "interactions.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Interactions & Integrity",
+          "file": "interactions.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Should load all assets with 200 OK",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1332,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:43.018Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--dd3a8-load-all-assets-with-200-OK-chromium/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--dd3a8-load-all-assets-with-200-OK-chromium/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e3a1181bd00640addebc-9e438d2ea42d72a24405",
+              "file": "interactions.spec.ts",
+              "line": 5,
+              "column": 9
+            },
+            {
+              "title": "Should have no console errors",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1567,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:43.028Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--14345-ould-have-no-console-errors-chromium/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--14345-ould-have-no-console-errors-chromium/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e3a1181bd00640addebc-44aaa6994353bb0ae6c7",
+              "file": "interactions.spec.ts",
+              "line": 29,
+              "column": 9
+            },
+            {
+              "title": "Main interactive elements should be clickable",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "failed",
+                      "duration": 5844,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.text-xl').filter({ hasText: /Elektronika/ })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.text-xl').filter({ hasText: /Elektronika/ })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.text-xl').filter({ hasText: /Elektronika/ })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.text-xl').filter({ hasText: /Elektronika/ })\u001b[22m\n\n    at /Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/interactions.spec.ts:62:87",
+                        "location": {
+                          "file": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/interactions.spec.ts",
+                          "column": 87,
+                          "line": 62
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 60 |\u001b[39m             \u001b[90m// Verify URL or content change?\u001b[39m\n \u001b[90m 61 |\u001b[39m             \u001b[90m// Mock data filtering is client side.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 62 |\u001b[39m             \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'.text-xl'\u001b[39m)\u001b[33m.\u001b[39mfilter({ hasText\u001b[33m:\u001b[39m \u001b[35m/Elektronika/\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m \u001b[90m// Header updates\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 63 |\u001b[39m         }\n \u001b[90m 64 |\u001b[39m\n \u001b[90m 65 |\u001b[39m         \u001b[90m// Check Product Card interactivity (e.g. Add to Cart if present or Link)\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/interactions.spec.ts",
+                            "column": 87,
+                            "line": 62
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.text-xl').filter({ hasText: /Elektronika/ })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.text-xl').filter({ hasText: /Elektronika/ })\u001b[22m\n\n\n\u001b[0m \u001b[90m 60 |\u001b[39m             \u001b[90m// Verify URL or content change?\u001b[39m\n \u001b[90m 61 |\u001b[39m             \u001b[90m// Mock data filtering is client side.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 62 |\u001b[39m             \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'.text-xl'\u001b[39m)\u001b[33m.\u001b[39mfilter({ hasText\u001b[33m:\u001b[39m \u001b[35m/Elektronika/\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m \u001b[90m// Header updates\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 63 |\u001b[39m         }\n \u001b[90m 64 |\u001b[39m\n \u001b[90m 65 |\u001b[39m         \u001b[90m// Check Product Card interactivity (e.g. Add to Cart if present or Link)\u001b[39m\u001b[0m\n\u001b[2m    at /Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/interactions.spec.ts:62:87\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:43.014Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--9beb1-lements-should-be-clickable-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--9beb1-lements-should-be-clickable-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--9beb1-lements-should-be-clickable-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/interactions.spec.ts",
+                        "column": 87,
+                        "line": 62
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e3a1181bd00640addebc-cb9979f48cfa3de66fe4",
+              "file": "interactions.spec.ts",
+              "line": 43,
+              "column": 9
+            },
+            {
+              "title": "Should load all assets with 200 OK",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2058,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:46.393Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--dd3a8-load-all-assets-with-200-OK-firefox/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--dd3a8-load-all-assets-with-200-OK-firefox/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e3a1181bd00640addebc-7509b165867d13641857",
+              "file": "interactions.spec.ts",
+              "line": 5,
+              "column": 9
+            },
+            {
+              "title": "Should have no console errors",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2409,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:47.040Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--14345-ould-have-no-console-errors-firefox/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--14345-ould-have-no-console-errors-firefox/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e3a1181bd00640addebc-ee1d4e9ba967d2ed1e3d",
+              "file": "interactions.spec.ts",
+              "line": 29,
+              "column": 9
+            },
+            {
+              "title": "Main interactive elements should be clickable",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 5948,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.text-xl').filter({ hasText: /Elektronika/ })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.text-xl').filter({ hasText: /Elektronika/ })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.text-xl').filter({ hasText: /Elektronika/ })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.text-xl').filter({ hasText: /Elektronika/ })\u001b[22m\n\n    at /Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/interactions.spec.ts:62:87",
+                        "location": {
+                          "file": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/interactions.spec.ts",
+                          "column": 87,
+                          "line": 62
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 60 |\u001b[39m             \u001b[90m// Verify URL or content change?\u001b[39m\n \u001b[90m 61 |\u001b[39m             \u001b[90m// Mock data filtering is client side.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 62 |\u001b[39m             \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'.text-xl'\u001b[39m)\u001b[33m.\u001b[39mfilter({ hasText\u001b[33m:\u001b[39m \u001b[35m/Elektronika/\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m \u001b[90m// Header updates\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 63 |\u001b[39m         }\n \u001b[90m 64 |\u001b[39m\n \u001b[90m 65 |\u001b[39m         \u001b[90m// Check Product Card interactivity (e.g. Add to Cart if present or Link)\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/interactions.spec.ts",
+                            "column": 87,
+                            "line": 62
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.text-xl').filter({ hasText: /Elektronika/ })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.text-xl').filter({ hasText: /Elektronika/ })\u001b[22m\n\n\n\u001b[0m \u001b[90m 60 |\u001b[39m             \u001b[90m// Verify URL or content change?\u001b[39m\n \u001b[90m 61 |\u001b[39m             \u001b[90m// Mock data filtering is client side.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 62 |\u001b[39m             \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'.text-xl'\u001b[39m)\u001b[33m.\u001b[39mfilter({ hasText\u001b[33m:\u001b[39m \u001b[35m/Elektronika/\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m \u001b[90m// Header updates\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 63 |\u001b[39m         }\n \u001b[90m 64 |\u001b[39m\n \u001b[90m 65 |\u001b[39m         \u001b[90m// Check Product Card interactivity (e.g. Add to Cart if present or Link)\u001b[39m\u001b[0m\n\u001b[2m    at /Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/interactions.spec.ts:62:87\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:47.517Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--9beb1-lements-should-be-clickable-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--9beb1-lements-should-be-clickable-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--9beb1-lements-should-be-clickable-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/interactions.spec.ts",
+                        "column": 87,
+                        "line": 62
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e3a1181bd00640addebc-2d34bdcb1f8e5ab0ee21",
+              "file": "interactions.spec.ts",
+              "line": 43,
+              "column": 9
+            },
+            {
+              "title": "Should load all assets with 200 OK",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1564,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:51.158Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--dd3a8-load-all-assets-with-200-OK-webkit/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--dd3a8-load-all-assets-with-200-OK-webkit/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e3a1181bd00640addebc-8bc9589dce34a2323ef0",
+              "file": "interactions.spec.ts",
+              "line": 5,
+              "column": 9
+            },
+            {
+              "title": "Should have no console errors",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1450,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:52.293Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--14345-ould-have-no-console-errors-webkit/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--14345-ould-have-no-console-errors-webkit/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e3a1181bd00640addebc-a6bf2c8ac9dab6a9013a",
+              "file": "interactions.spec.ts",
+              "line": 29,
+              "column": 9
+            },
+            {
+              "title": "Main interactive elements should be clickable",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 5489,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.text-xl').filter({ hasText: /Elektronika/ })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.text-xl').filter({ hasText: /Elektronika/ })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.text-xl').filter({ hasText: /Elektronika/ })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.text-xl').filter({ hasText: /Elektronika/ })\u001b[22m\n\n    at /Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/interactions.spec.ts:62:87",
+                        "location": {
+                          "file": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/interactions.spec.ts",
+                          "column": 87,
+                          "line": 62
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 60 |\u001b[39m             \u001b[90m// Verify URL or content change?\u001b[39m\n \u001b[90m 61 |\u001b[39m             \u001b[90m// Mock data filtering is client side.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 62 |\u001b[39m             \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'.text-xl'\u001b[39m)\u001b[33m.\u001b[39mfilter({ hasText\u001b[33m:\u001b[39m \u001b[35m/Elektronika/\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m \u001b[90m// Header updates\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 63 |\u001b[39m         }\n \u001b[90m 64 |\u001b[39m\n \u001b[90m 65 |\u001b[39m         \u001b[90m// Check Product Card interactivity (e.g. Add to Cart if present or Link)\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/interactions.spec.ts",
+                            "column": 87,
+                            "line": 62
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.text-xl').filter({ hasText: /Elektronika/ })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.text-xl').filter({ hasText: /Elektronika/ })\u001b[22m\n\n\n\u001b[0m \u001b[90m 60 |\u001b[39m             \u001b[90m// Verify URL or content change?\u001b[39m\n \u001b[90m 61 |\u001b[39m             \u001b[90m// Mock data filtering is client side.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 62 |\u001b[39m             \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'.text-xl'\u001b[39m)\u001b[33m.\u001b[39mfilter({ hasText\u001b[33m:\u001b[39m \u001b[35m/Elektronika/\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m \u001b[90m// Header updates\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 63 |\u001b[39m         }\n \u001b[90m 64 |\u001b[39m\n \u001b[90m 65 |\u001b[39m         \u001b[90m// Check Product Card interactivity (e.g. Add to Cart if present or Link)\u001b[39m\u001b[0m\n\u001b[2m    at /Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/interactions.spec.ts:62:87\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:52.499Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--9beb1-lements-should-be-clickable-webkit/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--9beb1-lements-should-be-clickable-webkit/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--9beb1-lements-should-be-clickable-webkit/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/interactions.spec.ts",
+                        "column": 87,
+                        "line": 62
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e3a1181bd00640addebc-7fc41153d7d36a952b00",
+              "file": "interactions.spec.ts",
+              "line": 43,
+              "column": 9
+            },
+            {
+              "title": "Should load all assets with 200 OK",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 1143,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:54.558Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--dd3a8-load-all-assets-with-200-OK-Mobile-Chrome/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--dd3a8-load-all-assets-with-200-OK-Mobile-Chrome/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e3a1181bd00640addebc-7a4d975f2360a0e5d71f",
+              "file": "interactions.spec.ts",
+              "line": 5,
+              "column": 9
+            },
+            {
+              "title": "Should have no console errors",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1442,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:55.076Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--14345-ould-have-no-console-errors-Mobile-Chrome/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--14345-ould-have-no-console-errors-Mobile-Chrome/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e3a1181bd00640addebc-0704947e8bed59d44df7",
+              "file": "interactions.spec.ts",
+              "line": 29,
+              "column": 9
+            },
+            {
+              "title": "Main interactive elements should be clickable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 242,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:55.350Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--9beb1-lements-should-be-clickable-Mobile-Chrome/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--9beb1-lements-should-be-clickable-Mobile-Chrome/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e3a1181bd00640addebc-9aa4f4dfda95343e26be",
+              "file": "interactions.spec.ts",
+              "line": 43,
+              "column": 9
+            },
+            {
+              "title": "Should load all assets with 200 OK",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 20,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1243,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:57.890Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--dd3a8-load-all-assets-with-200-OK-Mobile-Safari/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--dd3a8-load-all-assets-with-200-OK-Mobile-Safari/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e3a1181bd00640addebc-9e769d20f1f9848244a8",
+              "file": "interactions.spec.ts",
+              "line": 5,
+              "column": 9
+            },
+            {
+              "title": "Should have no console errors",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1342,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:57.721Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--14345-ould-have-no-console-errors-Mobile-Safari/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--14345-ould-have-no-console-errors-Mobile-Safari/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e3a1181bd00640addebc-e5acb2a109ffcd1cd897",
+              "file": "interactions.spec.ts",
+              "line": 29,
+              "column": 9
+            },
+            {
+              "title": "Main interactive elements should be clickable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 585,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:58.680Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--9beb1-lements-should-be-clickable-Mobile-Safari/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/interactions-Interactions--9beb1-lements-should-be-clickable-Mobile-Safari/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e3a1181bd00640addebc-2f5a061153fbd8fbc675",
+              "file": "interactions.spec.ts",
+              "line": 43,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "mobile.spec.ts",
+      "file": "mobile.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "RWD Layout Tests",
+          "file": "mobile.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "iPhone 13 Viewport",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2286,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "A snapshot doesn't exist at /Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/mobile.spec.ts-snapshots/rwd-iphone13-chromium-darwin.png, writing actual.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:44.296Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "rwd-iphone13-expected.png",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/mobile.spec.ts-snapshots/rwd-iphone13-chromium-darwin.png"
+                        },
+                        {
+                          "name": "rwd-iphone13-actual.png",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-iPhone-13-Viewport-chromium/rwd-iphone13-actual.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-iPhone-13-Viewport-chromium/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-iPhone-13-Viewport-chromium/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e79c838550b25e92508e-6beef697c0e842f9c588",
+              "file": "mobile.spec.ts",
+              "line": 5,
+              "column": 9
+            },
+            {
+              "title": "Desktop 1920x1080 Viewport",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1558,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "A snapshot doesn't exist at /Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/mobile.spec.ts-snapshots/rwd-desktop-1080p-chromium-darwin.png, writing actual.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:44.464Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "rwd-desktop-1080p-expected.png",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/mobile.spec.ts-snapshots/rwd-desktop-1080p-chromium-darwin.png"
+                        },
+                        {
+                          "name": "rwd-desktop-1080p-actual.png",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-Desktop-1920x1080-Viewport-chromium/rwd-desktop-1080p-actual.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-Desktop-1920x1080-Viewport-chromium/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-Desktop-1920x1080-Viewport-chromium/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e79c838550b25e92508e-97609a9d41275052045e",
+              "file": "mobile.spec.ts",
+              "line": 21,
+              "column": 9
+            },
+            {
+              "title": "iPhone 13 Viewport",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1017,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "A snapshot doesn't exist at /Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/mobile.spec.ts-snapshots/rwd-iphone13-firefox-darwin.png, writing actual.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:48.494Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "rwd-iphone13-expected.png",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/mobile.spec.ts-snapshots/rwd-iphone13-firefox-darwin.png"
+                        },
+                        {
+                          "name": "rwd-iphone13-actual.png",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-iPhone-13-Viewport-firefox/rwd-iphone13-actual.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-iPhone-13-Viewport-firefox/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-iPhone-13-Viewport-firefox/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e79c838550b25e92508e-7cc09b42768b2559ab21",
+              "file": "mobile.spec.ts",
+              "line": 5,
+              "column": 9
+            },
+            {
+              "title": "Desktop 1920x1080 Viewport",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1076,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "A snapshot doesn't exist at /Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/mobile.spec.ts-snapshots/rwd-desktop-1080p-firefox-darwin.png, writing actual.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:49.232Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "rwd-desktop-1080p-expected.png",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/mobile.spec.ts-snapshots/rwd-desktop-1080p-firefox-darwin.png"
+                        },
+                        {
+                          "name": "rwd-desktop-1080p-actual.png",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-Desktop-1920x1080-Viewport-firefox/rwd-desktop-1080p-actual.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-Desktop-1920x1080-Viewport-firefox/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-Desktop-1920x1080-Viewport-firefox/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e79c838550b25e92508e-94e5f6c741ec93955df8",
+              "file": "mobile.spec.ts",
+              "line": 21,
+              "column": 9
+            },
+            {
+              "title": "iPhone 13 Viewport",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 768,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "A snapshot doesn't exist at /Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/mobile.spec.ts-snapshots/rwd-iphone13-webkit-darwin.png, writing actual.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:53.155Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "rwd-iphone13-expected.png",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/mobile.spec.ts-snapshots/rwd-iphone13-webkit-darwin.png"
+                        },
+                        {
+                          "name": "rwd-iphone13-actual.png",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-iPhone-13-Viewport-webkit/rwd-iphone13-actual.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-iPhone-13-Viewport-webkit/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-iPhone-13-Viewport-webkit/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e79c838550b25e92508e-91c9224056a6cf1afe93",
+              "file": "mobile.spec.ts",
+              "line": 5,
+              "column": 9
+            },
+            {
+              "title": "Desktop 1920x1080 Viewport",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2842,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "A snapshot doesn't exist at /Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/mobile.spec.ts-snapshots/rwd-desktop-1080p-webkit-darwin.png, writing actual.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:53.039Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "rwd-desktop-1080p-expected.png",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/mobile.spec.ts-snapshots/rwd-desktop-1080p-webkit-darwin.png"
+                        },
+                        {
+                          "name": "rwd-desktop-1080p-actual.png",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-Desktop-1920x1080-Viewport-webkit/rwd-desktop-1080p-actual.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-Desktop-1920x1080-Viewport-webkit/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-Desktop-1920x1080-Viewport-webkit/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e79c838550b25e92508e-a9e0f772d0c72bb4ddf4",
+              "file": "mobile.spec.ts",
+              "line": 21,
+              "column": 9
+            },
+            {
+              "title": "iPhone 13 Viewport",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1600,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "A snapshot doesn't exist at /Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/mobile.spec.ts-snapshots/rwd-iphone13-Mobile-Chrome-darwin.png, writing actual.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:55.599Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "rwd-iphone13-expected.png",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/mobile.spec.ts-snapshots/rwd-iphone13-Mobile-Chrome-darwin.png"
+                        },
+                        {
+                          "name": "rwd-iphone13-actual.png",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-iPhone-13-Viewport-Mobile-Chrome/rwd-iphone13-actual.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-iPhone-13-Viewport-Mobile-Chrome/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-iPhone-13-Viewport-Mobile-Chrome/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e79c838550b25e92508e-1cd9b9647366eb8d0a70",
+              "file": "mobile.spec.ts",
+              "line": 5,
+              "column": 9
+            },
+            {
+              "title": "Desktop 1920x1080 Viewport",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 2541,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "A snapshot doesn't exist at /Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/mobile.spec.ts-snapshots/rwd-desktop-1080p-Mobile-Chrome-darwin.png, writing actual.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:55.814Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "rwd-desktop-1080p-expected.png",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/mobile.spec.ts-snapshots/rwd-desktop-1080p-Mobile-Chrome-darwin.png"
+                        },
+                        {
+                          "name": "rwd-desktop-1080p-actual.png",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-Desktop-1920x1080-Viewport-Mobile-Chrome/rwd-desktop-1080p-actual.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-Desktop-1920x1080-Viewport-Mobile-Chrome/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-Desktop-1920x1080-Viewport-Mobile-Chrome/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e79c838550b25e92508e-338d3bdede7c0ea557ce",
+              "file": "mobile.spec.ts",
+              "line": 21,
+              "column": 9
+            },
+            {
+              "title": "iPhone 13 Viewport",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 19,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 681,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "A snapshot doesn't exist at /Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/mobile.spec.ts-snapshots/rwd-iphone13-Mobile-Safari-darwin.png, writing actual.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:58.156Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "rwd-iphone13-expected.png",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/mobile.spec.ts-snapshots/rwd-iphone13-Mobile-Safari-darwin.png"
+                        },
+                        {
+                          "name": "rwd-iphone13-actual.png",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-iPhone-13-Viewport-Mobile-Safari/rwd-iphone13-actual.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-iPhone-13-Viewport-Mobile-Safari/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-iPhone-13-Viewport-Mobile-Safari/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e79c838550b25e92508e-9b6fe5f30bf591af943c",
+              "file": "mobile.spec.ts",
+              "line": 5,
+              "column": 9
+            },
+            {
+              "title": "Desktop 1920x1080 Viewport",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 22,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 2632,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "A snapshot doesn't exist at /Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/mobile.spec.ts-snapshots/rwd-desktop-1080p-Mobile-Safari-darwin.png, writing actual.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:58.879Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "rwd-desktop-1080p-expected.png",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/mobile.spec.ts-snapshots/rwd-desktop-1080p-Mobile-Safari-darwin.png"
+                        },
+                        {
+                          "name": "rwd-desktop-1080p-actual.png",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-Desktop-1920x1080-Viewport-Mobile-Safari/rwd-desktop-1080p-actual.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-Desktop-1920x1080-Viewport-Mobile-Safari/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/mobile-RWD-Layout-Tests-Desktop-1920x1080-Viewport-Mobile-Safari/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e79c838550b25e92508e-38d17f113d7296193660",
+              "file": "mobile.spec.ts",
+              "line": 21,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "visual.spec.ts",
+      "file": "visual.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Visual Regression",
+          "file": "visual.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Home Page should match design",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 252,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Marketplace')\nExpected: visible\nError: strict mode violation: getByText('Marketplace') resolved to 3 elements:\n    1) <span class=\"text-orange-600 text-sm whitespace-nowrap min-[380px]:inline hidden\">Marketplace</span> aka getByText('Marketplace').first()\n    2) <span class=\"text-orange-600 text-base md:text-lg whitespace-nowrap\">Marketplace</span> aka getByRole('link', { name: 'Marketplace' })\n    3) <p class=\"text-xs sm:text-sm text-center sm:text-left\">© 2024 Marketplace. Wszystkie prawa zastrzeżone.</p> aka getByText('© 2024 Marketplace. Wszystkie')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Marketplace')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Marketplace')\nExpected: visible\nError: strict mode violation: getByText('Marketplace') resolved to 3 elements:\n    1) <span class=\"text-orange-600 text-sm whitespace-nowrap min-[380px]:inline hidden\">Marketplace</span> aka getByText('Marketplace').first()\n    2) <span class=\"text-orange-600 text-base md:text-lg whitespace-nowrap\">Marketplace</span> aka getByRole('link', { name: 'Marketplace' })\n    3) <p class=\"text-xs sm:text-sm text-center sm:text-left\">© 2024 Marketplace. Wszystkie prawa zastrzeżone.</p> aka getByText('© 2024 Marketplace. Wszystkie')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Marketplace')\u001b[22m\n\n    at /Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/visual.spec.ts:9:53",
+                        "location": {
+                          "file": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/visual.spec.ts",
+                          "column": 53,
+                          "line": 9
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  7 |\u001b[39m\n \u001b[90m  8 |\u001b[39m         \u001b[90m// Verification: wait for the header and products to load\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Marketplace'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Wybrane dla Ciebie'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m         \u001b[90m// Wait for at least one product to be visible to ensure data is loaded\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/visual.spec.ts",
+                            "column": 53,
+                            "line": 9
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Marketplace')\nExpected: visible\nError: strict mode violation: getByText('Marketplace') resolved to 3 elements:\n    1) <span class=\"text-orange-600 text-sm whitespace-nowrap min-[380px]:inline hidden\">Marketplace</span> aka getByText('Marketplace').first()\n    2) <span class=\"text-orange-600 text-base md:text-lg whitespace-nowrap\">Marketplace</span> aka getByRole('link', { name: 'Marketplace' })\n    3) <p class=\"text-xs sm:text-sm text-center sm:text-left\">© 2024 Marketplace. Wszystkie prawa zastrzeżone.</p> aka getByText('© 2024 Marketplace. Wszystkie')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Marketplace')\u001b[22m\n\n\n\u001b[0m \u001b[90m  7 |\u001b[39m\n \u001b[90m  8 |\u001b[39m         \u001b[90m// Verification: wait for the header and products to load\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Marketplace'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Wybrane dla Ciebie'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m         \u001b[90m// Wait for at least one product to be visible to ensure data is loaded\u001b[39m\u001b[0m\n\u001b[2m    at /Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/visual.spec.ts:9:53\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:44.827Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/visual-Visual-Regression-Home-Page-should-match-design-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/visual-Visual-Regression-Home-Page-should-match-design-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/visual-Visual-Regression-Home-Page-should-match-design-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/visual.spec.ts",
+                        "column": 53,
+                        "line": 9
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-a90841620759af934c2d",
+              "file": "visual.spec.ts",
+              "line": 4,
+              "column": 9
+            },
+            {
+              "title": "Home Page should match design",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 4,
+                      "status": "failed",
+                      "duration": 1786,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Marketplace')\nExpected: visible\nError: strict mode violation: getByText('Marketplace') resolved to 3 elements:\n    1) <span class=\"text-orange-600 text-sm whitespace-nowrap min-[380px]:inline hidden\">Marketplace</span> aka getByText('Marketplace').first()\n    2) <span class=\"text-orange-600 text-base md:text-lg whitespace-nowrap\">Marketplace</span> aka getByRole('link', { name: 'Marketplace' })\n    ...\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Marketplace')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Marketplace')\nExpected: visible\nError: strict mode violation: getByText('Marketplace') resolved to 3 elements:\n    1) <span class=\"text-orange-600 text-sm whitespace-nowrap min-[380px]:inline hidden\">Marketplace</span> aka getByText('Marketplace').first()\n    2) <span class=\"text-orange-600 text-base md:text-lg whitespace-nowrap\">Marketplace</span> aka getByRole('link', { name: 'Marketplace' })\n    ...\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Marketplace')\u001b[22m\n\n    at /Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/visual.spec.ts:9:53",
+                        "location": {
+                          "file": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/visual.spec.ts",
+                          "column": 53,
+                          "line": 9
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  7 |\u001b[39m\n \u001b[90m  8 |\u001b[39m         \u001b[90m// Verification: wait for the header and products to load\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Marketplace'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Wybrane dla Ciebie'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m         \u001b[90m// Wait for at least one product to be visible to ensure data is loaded\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/visual.spec.ts",
+                            "column": 53,
+                            "line": 9
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Marketplace')\nExpected: visible\nError: strict mode violation: getByText('Marketplace') resolved to 3 elements:\n    1) <span class=\"text-orange-600 text-sm whitespace-nowrap min-[380px]:inline hidden\">Marketplace</span> aka getByText('Marketplace').first()\n    2) <span class=\"text-orange-600 text-base md:text-lg whitespace-nowrap\">Marketplace</span> aka getByRole('link', { name: 'Marketplace' })\n    ...\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Marketplace')\u001b[22m\n\n\n\u001b[0m \u001b[90m  7 |\u001b[39m\n \u001b[90m  8 |\u001b[39m         \u001b[90m// Verification: wait for the header and products to load\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Marketplace'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Wybrane dla Ciebie'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m         \u001b[90m// Wait for at least one product to be visible to ensure data is loaded\u001b[39m\u001b[0m\n\u001b[2m    at /Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/visual.spec.ts:9:53\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:49.786Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/visual-Visual-Regression-Home-Page-should-match-design-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/visual-Visual-Regression-Home-Page-should-match-design-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/visual-Visual-Regression-Home-Page-should-match-design-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/visual.spec.ts",
+                        "column": 53,
+                        "line": 9
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-c3ae3bac4c8ca415ceb7",
+              "file": "visual.spec.ts",
+              "line": 4,
+              "column": 9
+            },
+            {
+              "title": "Home Page should match design",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 322,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Marketplace')\nExpected: visible\nError: strict mode violation: getByText('Marketplace') resolved to 3 elements:\n    1) <span class=\"text-orange-600 text-sm whitespace-nowrap min-[380px]:inline hidden\">Marketplace</span> aka getByText('Marketplace').first()\n    2) <span class=\"text-orange-600 text-base md:text-lg whitespace-nowrap\">Marketplace</span> aka getByRole('link', { name: 'Marketplace' })\n    3) <p class=\"text-xs sm:text-sm text-center sm:text-left\">© 2024 Marketplace. Wszystkie prawa zastrzeżone.</p> aka getByText('© 2024 Marketplace. Wszystkie')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Marketplace')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Marketplace')\nExpected: visible\nError: strict mode violation: getByText('Marketplace') resolved to 3 elements:\n    1) <span class=\"text-orange-600 text-sm whitespace-nowrap min-[380px]:inline hidden\">Marketplace</span> aka getByText('Marketplace').first()\n    2) <span class=\"text-orange-600 text-base md:text-lg whitespace-nowrap\">Marketplace</span> aka getByRole('link', { name: 'Marketplace' })\n    3) <p class=\"text-xs sm:text-sm text-center sm:text-left\">© 2024 Marketplace. Wszystkie prawa zastrzeżone.</p> aka getByText('© 2024 Marketplace. Wszystkie')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Marketplace')\u001b[22m\n\n    at /Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/visual.spec.ts:9:53",
+                        "location": {
+                          "file": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/visual.spec.ts",
+                          "column": 53,
+                          "line": 9
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  7 |\u001b[39m\n \u001b[90m  8 |\u001b[39m         \u001b[90m// Verification: wait for the header and products to load\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Marketplace'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Wybrane dla Ciebie'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m         \u001b[90m// Wait for at least one product to be visible to ensure data is loaded\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/visual.spec.ts",
+                            "column": 53,
+                            "line": 9
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Marketplace')\nExpected: visible\nError: strict mode violation: getByText('Marketplace') resolved to 3 elements:\n    1) <span class=\"text-orange-600 text-sm whitespace-nowrap min-[380px]:inline hidden\">Marketplace</span> aka getByText('Marketplace').first()\n    2) <span class=\"text-orange-600 text-base md:text-lg whitespace-nowrap\">Marketplace</span> aka getByRole('link', { name: 'Marketplace' })\n    3) <p class=\"text-xs sm:text-sm text-center sm:text-left\">© 2024 Marketplace. Wszystkie prawa zastrzeżone.</p> aka getByText('© 2024 Marketplace. Wszystkie')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Marketplace')\u001b[22m\n\n\n\u001b[0m \u001b[90m  7 |\u001b[39m\n \u001b[90m  8 |\u001b[39m         \u001b[90m// Verification: wait for the header and products to load\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Marketplace'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Wybrane dla Ciebie'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m         \u001b[90m// Wait for at least one product to be visible to ensure data is loaded\u001b[39m\u001b[0m\n\u001b[2m    at /Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/visual.spec.ts:9:53\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:53.759Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/visual-Visual-Regression-Home-Page-should-match-design-webkit/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/visual-Visual-Regression-Home-Page-should-match-design-webkit/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/visual-Visual-Regression-Home-Page-should-match-design-webkit/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/visual.spec.ts",
+                        "column": 53,
+                        "line": 9
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-6d2934a87b215a6c477f",
+              "file": "visual.spec.ts",
+              "line": 4,
+              "column": 9
+            },
+            {
+              "title": "Home Page should match design",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 273,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Marketplace')\nExpected: visible\nError: strict mode violation: getByText('Marketplace') resolved to 3 elements:\n    1) <span class=\"text-orange-600 text-sm whitespace-nowrap min-[380px]:inline hidden\">Marketplace</span> aka getByRole('link', { name: 'Marketplace' })\n    2) <span class=\"text-orange-600 text-base md:text-lg whitespace-nowrap\">Marketplace</span> aka getByText('Marketplace').nth(1)\n    3) <p class=\"text-xs sm:text-sm text-center sm:text-left\">© 2024 Marketplace. Wszystkie prawa zastrzeżone.</p> aka getByText('© 2024 Marketplace. Wszystkie')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Marketplace')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Marketplace')\nExpected: visible\nError: strict mode violation: getByText('Marketplace') resolved to 3 elements:\n    1) <span class=\"text-orange-600 text-sm whitespace-nowrap min-[380px]:inline hidden\">Marketplace</span> aka getByRole('link', { name: 'Marketplace' })\n    2) <span class=\"text-orange-600 text-base md:text-lg whitespace-nowrap\">Marketplace</span> aka getByText('Marketplace').nth(1)\n    3) <p class=\"text-xs sm:text-sm text-center sm:text-left\">© 2024 Marketplace. Wszystkie prawa zastrzeżone.</p> aka getByText('© 2024 Marketplace. Wszystkie')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Marketplace')\u001b[22m\n\n    at /Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/visual.spec.ts:9:53",
+                        "location": {
+                          "file": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/visual.spec.ts",
+                          "column": 53,
+                          "line": 9
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  7 |\u001b[39m\n \u001b[90m  8 |\u001b[39m         \u001b[90m// Verification: wait for the header and products to load\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Marketplace'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Wybrane dla Ciebie'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m         \u001b[90m// Wait for at least one product to be visible to ensure data is loaded\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/visual.spec.ts",
+                            "column": 53,
+                            "line": 9
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Marketplace')\nExpected: visible\nError: strict mode violation: getByText('Marketplace') resolved to 3 elements:\n    1) <span class=\"text-orange-600 text-sm whitespace-nowrap min-[380px]:inline hidden\">Marketplace</span> aka getByRole('link', { name: 'Marketplace' })\n    2) <span class=\"text-orange-600 text-base md:text-lg whitespace-nowrap\">Marketplace</span> aka getByText('Marketplace').nth(1)\n    3) <p class=\"text-xs sm:text-sm text-center sm:text-left\">© 2024 Marketplace. Wszystkie prawa zastrzeżone.</p> aka getByText('© 2024 Marketplace. Wszystkie')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Marketplace')\u001b[22m\n\n\n\u001b[0m \u001b[90m  7 |\u001b[39m\n \u001b[90m  8 |\u001b[39m         \u001b[90m// Verification: wait for the header and products to load\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Marketplace'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Wybrane dla Ciebie'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m         \u001b[90m// Wait for at least one product to be visible to ensure data is loaded\u001b[39m\u001b[0m\n\u001b[2m    at /Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/visual.spec.ts:9:53\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:56.315Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/visual-Visual-Regression-Home-Page-should-match-design-Mobile-Chrome/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/visual-Visual-Regression-Home-Page-should-match-design-Mobile-Chrome/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/visual-Visual-Regression-Home-Page-should-match-design-Mobile-Chrome/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/visual.spec.ts",
+                        "column": 53,
+                        "line": 9
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-e70e889faf977624b808",
+              "file": "visual.spec.ts",
+              "line": 4,
+              "column": 9
+            },
+            {
+              "title": "Home Page should match design",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
+                  "results": [
+                    {
+                      "workerIndex": 19,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 414,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Marketplace')\nExpected: visible\nError: strict mode violation: getByText('Marketplace') resolved to 3 elements:\n    1) <span class=\"text-orange-600 text-sm whitespace-nowrap min-[380px]:inline hidden\">Marketplace</span> aka getByRole('link', { name: 'Marketplace' })\n    2) <span class=\"text-orange-600 text-base md:text-lg whitespace-nowrap\">Marketplace</span> aka getByText('Marketplace').nth(1)\n    3) <p class=\"text-xs sm:text-sm text-center sm:text-left\">© 2024 Marketplace. Wszystkie prawa zastrzeżone.</p> aka getByText('© 2024 Marketplace. Wszystkie')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Marketplace')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Marketplace')\nExpected: visible\nError: strict mode violation: getByText('Marketplace') resolved to 3 elements:\n    1) <span class=\"text-orange-600 text-sm whitespace-nowrap min-[380px]:inline hidden\">Marketplace</span> aka getByRole('link', { name: 'Marketplace' })\n    2) <span class=\"text-orange-600 text-base md:text-lg whitespace-nowrap\">Marketplace</span> aka getByText('Marketplace').nth(1)\n    3) <p class=\"text-xs sm:text-sm text-center sm:text-left\">© 2024 Marketplace. Wszystkie prawa zastrzeżone.</p> aka getByText('© 2024 Marketplace. Wszystkie')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Marketplace')\u001b[22m\n\n    at /Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/visual.spec.ts:9:53",
+                        "location": {
+                          "file": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/visual.spec.ts",
+                          "column": 53,
+                          "line": 9
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  7 |\u001b[39m\n \u001b[90m  8 |\u001b[39m         \u001b[90m// Verification: wait for the header and products to load\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Marketplace'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Wybrane dla Ciebie'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m         \u001b[90m// Wait for at least one product to be visible to ensure data is loaded\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/visual.spec.ts",
+                            "column": 53,
+                            "line": 9
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Marketplace')\nExpected: visible\nError: strict mode violation: getByText('Marketplace') resolved to 3 elements:\n    1) <span class=\"text-orange-600 text-sm whitespace-nowrap min-[380px]:inline hidden\">Marketplace</span> aka getByRole('link', { name: 'Marketplace' })\n    2) <span class=\"text-orange-600 text-base md:text-lg whitespace-nowrap\">Marketplace</span> aka getByText('Marketplace').nth(1)\n    3) <p class=\"text-xs sm:text-sm text-center sm:text-left\">© 2024 Marketplace. Wszystkie prawa zastrzeżone.</p> aka getByText('© 2024 Marketplace. Wszystkie')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Marketplace')\u001b[22m\n\n\n\u001b[0m \u001b[90m  7 |\u001b[39m\n \u001b[90m  8 |\u001b[39m         \u001b[90m// Verification: wait for the header and products to load\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Marketplace'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 10 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Wybrane dla Ciebie'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m         \u001b[90m// Wait for at least one product to be visible to ensure data is loaded\u001b[39m\u001b[0m\n\u001b[2m    at /Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/visual.spec.ts:9:53\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-11T14:01:58.848Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/visual-Visual-Regression-Home-Page-should-match-design-Mobile-Safari/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/visual-Visual-Regression-Home-Page-should-match-design-Mobile-Safari/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/screeny/visual-Visual-Regression-Home-Page-should-match-design-Mobile-Safari/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/przemyslawbladowski/Desktop/allegro/wdrozenie_sklep/tests/visual.spec.ts",
+                        "column": 53,
+                        "line": 9
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "8324bb52c49185e48ff4-263ab46d8023a9f81903",
+              "file": "visual.spec.ts",
+              "line": 4,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-01-11T14:01:42.582Z",
+    "duration": 19182.168999999998,
+    "expected": 32,
+    "skipped": 0,
+    "unexpected": 8,
+    "flaky": 0
+  }
+}

@@ -1,11 +1,45 @@
+# Sklep Internetowy Modern - Projekt Testowy
 
-  # Sklep Internetowy Responsywny (Copy)
+## Opis Projektu
+Nowoczesna aplikacja e-commerce zbudowana w React + Vite, zawierająca mechanizmy logowania, filtrowania produktów oraz responsywny design. Projekt służy jako baza do demonstracji automatyzacji testów E2E.
 
-  This is a code bundle for Sklep Internetowy Responsywny (Copy). The original project is available at https://www.figma.com/design/uGAXpWJSnvSdvCitCThgDl/Sklep-Internetowy-Responsywny--Copy-.
+## Technologie
+- **Frontend**: React, TypeScript, Vite, TailwindCSS
+- **Testy**: Playwright
+- **Kontrola wersji**: Git
 
-  ## Running the code
+## Instalacja i Uruchomienie
 
-  Run `npm i` to install the dependencies.
+1. Zainstaluj zależności:
+   ```bash
+   npm install
+   ```
 
-  Run `npm run dev` to start the development server.
-  
+2. Uruchom serwer deweloperski:
+   ```bash
+   npm run dev
+   ```
+
+## Testy Automatyczne (Playwright)
+
+W projekcie skonfigurowano środowisko testowe Playwright pokrywające:
+- **Visual Regression Testing**: Weryfikacja wyglądu strony głównej.
+- **Interactions**: Sprawdzenie interakcji (przyciski, nawigacja) oraz błędów w konsoli.
+- **RWD**: Testy responsywności na urządzeniach mobilnych (iPhone 13) i desktopowych.
+
+### Uruchomienie Testów
+
+Aby uruchomić wszystkie testy:
+```bash
+npx playwright test
+```
+
+### Artefakty Testowe
+
+Wyniki testów zapisywane są w katalogu `tests/`:
+- `tests/screeny/`: Zrzuty ekranu z błędami oraz visual regression snapshots.
+- `tests/video/`: Nagrania wideo z przebiegu testów.
+- `tests/dokumentacja_testow/`: Raport HTML oraz JSON.
+
+## Autor
+Zrealizowano w ramach zadania rekrutacyjnego / wdrożeniowego.

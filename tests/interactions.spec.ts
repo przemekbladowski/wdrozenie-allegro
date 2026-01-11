@@ -59,7 +59,7 @@ test.describe('Interactions & Integrity', () => {
             await categoryButton.click();
             // Verify URL or content change?
             // Mock data filtering is client side.
-            await expect(page.locator('.text-xl').filter({ hasText: /Elektronika/ })).toBeVisible(); // Header updates
+            await expect(page.getByRole('heading', { name: 'Elektronika' })).toBeVisible(); // Header updates
         }
 
         // Check Product Card interactivity (e.g. Add to Cart if present or Link)

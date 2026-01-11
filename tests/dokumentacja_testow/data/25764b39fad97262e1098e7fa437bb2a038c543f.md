@@ -1,0 +1,260 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - link "Marketplace" [ref=e7]:
+        - /url: /
+        - img [ref=e9]
+        - generic [ref=e12]: Marketplace
+      - generic [ref=e14]:
+        - textbox "Szukaj..." [ref=e15]
+        - img
+        - button "Szukaj" [ref=e16]
+      - generic [ref=e17]:
+        - link "Moje konto" [ref=e18]:
+          - /url: /account
+          - img [ref=e19]
+        - link "Obserwowane" [ref=e22]:
+          - /url: /favorites
+          - img [ref=e23]
+        - link "Koszyk" [ref=e25]:
+          - /url: /checkout
+          - img [ref=e26]
+  - generic [ref=e32]:
+    - button "Wszystkie" [ref=e33]:
+      - generic [ref=e34]: Wszystkie
+    - button "Elektronika" [ref=e35]:
+      - img [ref=e36]
+      - generic [ref=e38]: Elektronika
+    - button "Dom" [ref=e39]:
+      - img [ref=e40]
+      - generic [ref=e43]: Dom
+    - button "Sport" [ref=e44]:
+      - img [ref=e45]
+      - generic [ref=e51]: Sport
+    - button "Motoryzacja" [ref=e52]:
+      - img [ref=e53]
+      - generic [ref=e57]: Motoryzacja
+    - button "Dzieci" [ref=e58]:
+      - img [ref=e59]
+      - generic [ref=e62]: Dzieci
+    - button "Książki" [ref=e63]:
+      - img [ref=e64]
+      - generic [ref=e66]: Książki
+  - generic [ref=e68]:
+    - complementary [ref=e69]:
+      - generic [ref=e70]:
+        - heading "Filtry" [level=3] [ref=e71]
+        - generic [ref=e72]:
+          - generic [ref=e73]: Cena (zł)
+          - generic [ref=e74]:
+            - spinbutton [ref=e75]: "0"
+            - spinbutton [ref=e76]: "10000"
+          - generic [ref=e77]:
+            - generic [ref=e78]: 0 zł
+            - generic [ref=e79]: 10000 zł
+          - slider [ref=e80]: "10000"
+        - generic [ref=e81]:
+          - generic [ref=e82]: Stan
+          - generic [ref=e83]:
+            - generic [ref=e84] [cursor=pointer]:
+              - checkbox "Nowe" [ref=e85]
+              - generic [ref=e86]: Nowe
+            - generic [ref=e87] [cursor=pointer]:
+              - checkbox "Używane" [ref=e88]
+              - generic [ref=e89]: Używane
+            - generic [ref=e90] [cursor=pointer]:
+              - checkbox "Uszkodzone" [ref=e91]
+              - generic [ref=e92]: Uszkodzone
+        - generic [ref=e93]:
+          - generic [ref=e94]: Lokalizacja
+          - textbox "Wpisz miasto" [ref=e95]
+        - generic [ref=e96]:
+          - generic [ref=e97]: Dostawa
+          - generic [ref=e98]:
+            - generic [ref=e99] [cursor=pointer]:
+              - checkbox "Odbiór osobisty" [ref=e100]
+              - generic [ref=e101]: Odbiór osobisty
+            - generic [ref=e102] [cursor=pointer]:
+              - checkbox "Wysyłka" [ref=e103]
+              - generic [ref=e104]: Wysyłka
+            - generic [ref=e105] [cursor=pointer]:
+              - checkbox "Kurier" [ref=e106]
+              - generic [ref=e107]: Kurier
+    - main [ref=e108]:
+      - generic [ref=e109]:
+        - heading "Wybrane dla Ciebie" [level=2] [ref=e110]
+        - generic [ref=e111]: 8 ogłoszeń
+      - generic [ref=e112]:
+        - link "Laptop Dell XPS 15 Dodaj do ulubionych Laptop Dell XPS 15 4500 zł Warszawa" [ref=e113]:
+          - /url: /product/1
+          - generic [ref=e114] [cursor=pointer]:
+            - generic [ref=e115]:
+              - img "Laptop Dell XPS 15" [ref=e116]
+              - button "Dodaj do ulubionych" [ref=e117]:
+                - img [ref=e118]
+            - generic [ref=e120]:
+              - heading "Laptop Dell XPS 15" [level=3] [ref=e121]
+              - generic [ref=e123]: 4500 zł
+              - generic [ref=e124]:
+                - img [ref=e125]
+                - generic [ref=e128]: Warszawa
+        - link "iPhone 14 Pro 256GB Dodaj do ulubionych iPhone 14 Pro 256GB 3200 zł Kraków" [ref=e129]:
+          - /url: /product/2
+          - generic [ref=e130] [cursor=pointer]:
+            - generic [ref=e131]:
+              - img "iPhone 14 Pro 256GB" [ref=e132]
+              - button "Dodaj do ulubionych" [ref=e133]:
+                - img [ref=e134]
+            - generic [ref=e136]:
+              - heading "iPhone 14 Pro 256GB" [level=3] [ref=e137]
+              - generic [ref=e139]: 3200 zł
+              - generic [ref=e140]:
+                - img [ref=e141]
+                - generic [ref=e144]: Kraków
+        - link "Rower górski Trek Dodaj do ulubionych Rower górski Trek 1800 zł Gdańsk" [ref=e145]:
+          - /url: /product/3
+          - generic [ref=e146] [cursor=pointer]:
+            - generic [ref=e147]:
+              - img "Rower górski Trek" [ref=e148]
+              - button "Dodaj do ulubionych" [ref=e149]:
+                - img [ref=e150]
+            - generic [ref=e152]:
+              - heading "Rower górski Trek" [level=3] [ref=e153]
+              - generic [ref=e155]: 1800 zł
+              - generic [ref=e156]:
+                - img [ref=e157]
+                - generic [ref=e160]: Gdańsk
+        - link "Fotel biurowy ergonomiczny Dodaj do ulubionych Fotel biurowy ergonomiczny 890 zł Poznań" [ref=e161]:
+          - /url: /product/4
+          - generic [ref=e162] [cursor=pointer]:
+            - generic [ref=e163]:
+              - img "Fotel biurowy ergonomiczny" [ref=e164]
+              - button "Dodaj do ulubionych" [ref=e165]:
+                - img [ref=e166]
+            - generic [ref=e168]:
+              - heading "Fotel biurowy ergonomiczny" [level=3] [ref=e169]
+              - generic [ref=e171]: 890 zł
+              - generic [ref=e172]:
+                - img [ref=e173]
+                - generic [ref=e176]: Poznań
+        - link "Aparat Canon EOS R6 Dodaj do ulubionych Aparat Canon EOS R6 6500 zł Wrocław" [ref=e177]:
+          - /url: /product/5
+          - generic [ref=e178] [cursor=pointer]:
+            - generic [ref=e179]:
+              - img "Aparat Canon EOS R6" [ref=e180]
+              - button "Dodaj do ulubionych" [ref=e181]:
+                - img [ref=e182]
+            - generic [ref=e184]:
+              - heading "Aparat Canon EOS R6" [level=3] [ref=e185]
+              - generic [ref=e187]: 6500 zł
+              - generic [ref=e188]:
+                - img [ref=e189]
+                - generic [ref=e192]: Wrocław
+        - link "Piłka do koszykówki Spalding Dodaj do ulubionych Piłka do koszykówki Spalding 120 zł Katowice" [ref=e193]:
+          - /url: /product/6
+          - generic [ref=e194] [cursor=pointer]:
+            - generic [ref=e195]:
+              - img "Piłka do koszykówki Spalding" [ref=e196]
+              - button "Dodaj do ulubionych" [ref=e197]:
+                - img [ref=e198]
+            - generic [ref=e200]:
+              - heading "Piłka do koszykówki Spalding" [level=3] [ref=e201]
+              - generic [ref=e203]: 120 zł
+              - generic [ref=e204]:
+                - img [ref=e205]
+                - generic [ref=e208]: Katowice
+        - link "Stół drewniany rozkładany Dodaj do ulubionych Stół drewniany rozkładany 450 zł Łódź" [ref=e209]:
+          - /url: /product/7
+          - generic [ref=e210] [cursor=pointer]:
+            - generic [ref=e211]:
+              - img "Stół drewniany rozkładany" [ref=e212]
+              - button "Dodaj do ulubionych" [ref=e213]:
+                - img [ref=e214]
+            - generic [ref=e216]:
+              - heading "Stół drewniany rozkładany" [level=3] [ref=e217]
+              - generic [ref=e219]: 450 zł
+              - generic [ref=e220]:
+                - img [ref=e221]
+                - generic [ref=e224]: Łódź
+        - link "Słuchawki Sony WH-1000XM5 Dodaj do ulubionych Słuchawki Sony WH-1000XM5 1200 zł Warszawa" [ref=e225]:
+          - /url: /product/8
+          - generic [ref=e226] [cursor=pointer]:
+            - generic [ref=e227]:
+              - img "Słuchawki Sony WH-1000XM5" [ref=e228]
+              - button "Dodaj do ulubionych" [ref=e229]:
+                - img [ref=e230]
+            - generic [ref=e232]:
+              - heading "Słuchawki Sony WH-1000XM5" [level=3] [ref=e233]
+              - generic [ref=e235]: 1200 zł
+              - generic [ref=e236]:
+                - img [ref=e237]
+                - generic [ref=e240]: Warszawa
+  - contentinfo [ref=e241]:
+    - generic [ref=e242]:
+      - generic [ref=e243]:
+        - generic [ref=e244]:
+          - heading "O nas" [level=3] [ref=e245]
+          - list [ref=e246]:
+            - listitem [ref=e247]:
+              - link "Kim jesteśmy" [ref=e248]:
+                - /url: /about
+            - listitem [ref=e249]:
+              - link "Kariera" [ref=e250]:
+                - /url: /careers
+            - listitem [ref=e251]:
+              - link "Dla prasy" [ref=e252]:
+                - /url: /press
+            - listitem [ref=e253]:
+              - link "Kontakt" [ref=e254]:
+                - /url: /contact
+        - generic [ref=e255]:
+          - heading "Pomoc" [level=3] [ref=e256]
+          - list [ref=e257]:
+            - listitem [ref=e258]:
+              - link "FAQ" [ref=e259]:
+                - /url: /faq
+            - listitem [ref=e260]:
+              - link "Wysyłka" [ref=e261]:
+                - /url: /shipping
+            - listitem [ref=e262]:
+              - link "Zwroty" [ref=e263]:
+                - /url: /returns
+            - listitem [ref=e264]:
+              - link "Wsparcie" [ref=e265]:
+                - /url: /support
+        - generic [ref=e266]:
+          - heading "Informacje prawne" [level=3] [ref=e267]
+          - list [ref=e268]:
+            - listitem [ref=e269]:
+              - link "Regulamin" [ref=e270]:
+                - /url: /terms
+            - listitem [ref=e271]:
+              - link "Polityka prywatności" [ref=e272]:
+                - /url: /privacy
+            - listitem [ref=e273]:
+              - link "Polityka cookies" [ref=e274]:
+                - /url: /cookies
+        - generic [ref=e275]:
+          - heading "Śledź nas" [level=3] [ref=e276]
+          - generic [ref=e277]:
+            - link "Facebook" [ref=e278]:
+              - /url: https://facebook.com
+              - img [ref=e279]
+            - link "Twitter" [ref=e281]:
+              - /url: https://twitter.com
+              - img [ref=e282]
+            - link "Instagram" [ref=e284]:
+              - /url: https://instagram.com
+              - img [ref=e285]
+            - link "LinkedIn" [ref=e288]:
+              - /url: https://linkedin.com
+              - img [ref=e289]
+      - generic [ref=e294]:
+        - paragraph [ref=e295]: © 2024 Marketplace. Wszystkie prawa zastrzeżone.
+        - generic [ref=e296]:
+          - paragraph [ref=e297]: "Projekt: WSB Merito"
+          - paragraph [ref=e298]: "Autorzy: Rafał Bojarski, Przemysław Bladowski, Jakub Dampc, Kacper Rynkiewicz, Nikita Kostiuchok"
+```

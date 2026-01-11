@@ -6,7 +6,7 @@ test.describe('Visual Regression', () => {
         await page.goto('/');
 
         // Verification: wait for the header and products to load
-        await expect(page.getByText('Marketplace')).toBeVisible();
+        await expect(page.getByRole('link', { name: 'Marketplace' })).toBeVisible();
         await expect(page.getByText('Wybrane dla Ciebie')).toBeVisible();
 
         // Wait for at least one product to be visible to ensure data is loaded
