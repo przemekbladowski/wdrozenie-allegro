@@ -4,9 +4,10 @@ import { CategoryBar } from '../components/CategoryBar';
 import { FilterSidebar } from '../components/FilterSidebar';
 import { ProductCard } from '../components/ProductCard';
 import { Footer } from '../components/Footer';
-import { mockProducts } from '../data/products';
+import { useProducts } from '../hooks/useProducts';
 
 export function HomePage() {
+  const { products, loading, error } = useProducts();
   const [selectedCategory, setSelectedCategory] = useState<string>('Wszystkie');
   const [searchQuery, setSearchQuery] = useState('');
   const [showFilters, setShowFilters] = useState(false);
@@ -17,11 +18,11 @@ export function HomePage() {
 
   const displayedProducts = useMemo(() => {
     if (selectedCategory === 'Wszystkie') {
-      return mockProducts;
+      return products;
     } else {
-      return mockProducts.filter(p => p.category === selectedCategory);
+      return products.filter(p => p.category === selectedCategory);
     }
-  }, [selectedCategory]);
+  }, [selectedCategory, products]);
 
   const filteredProducts = displayedProducts.filter(product => {
     const matchesSearch = product.title.toLowerCase().includes(searchQuery.toLowerCase());
@@ -32,6 +33,22 @@ export function HomePage() {
 
     return matchesSearch && matchesPrice && matchesCondition && matchesLocation && matchesDelivery;
   });
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-xl text-gray-600">Ładowanie ogłoszeń...</div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-xl text-red-600">Błąd: {error}</div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">

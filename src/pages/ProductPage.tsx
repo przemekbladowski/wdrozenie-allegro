@@ -5,7 +5,7 @@ import { Footer } from '../components/Footer';
 import { MessageModal } from '../components/MessageModal';
 import { ShareModal } from '../components/ShareModal';
 import { Heart, MapPin, Share2, Star, ChevronLeft, ChevronRight, MessageCircle, Shield } from 'lucide-react';
-import { mockProducts } from '../data/products';
+import { useProduct } from '../hooks/useProduct';
 import { useCart } from '../contexts/CartContext';
 import { useAuth } from '../contexts/AuthContext';
 import { useUser } from '../contexts/UserContext';
@@ -13,7 +13,7 @@ import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 
 export function ProductPage() {
   const { id } = useParams();
-  const product = mockProducts.find(p => p.id === Number(id));
+  const { product, loading, error } = useProduct(id);
   const [searchQuery, setSearchQuery] = useState('');
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isMessageModalOpen, setIsMessageModalOpen] = useState(false);
@@ -24,17 +24,27 @@ export function ProductPage() {
   const [isFavorite, setIsFavorite] = useState(false);
 
   useEffect(() => {
-    if (product) {
+    if (product && user.favorites) {
       setIsFavorite(user.favorites.includes(product.id));
     }
   }, [user.favorites, product]);
 
-  if (!product) {
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-xl text-gray-600">Ładowanie produktu...</div>
+      </div>
+    );
+  }
+
+  if (error || !product) {
     return (
       <div className="min-h-screen bg-gray-50 flex flex-col">
         <Header searchQuery={searchQuery} onSearchChange={setSearchQuery} />
         <div className="flex-1 max-w-7xl mx-auto px-4 py-12 text-center">
-          <h2 className="mb-4 text-gray-900">Produkt nie znaleziony</h2>
+          <h2 className="mb-4 text-gray-900">
+            {error ? `Błąd: ${error}` : 'Produkt nie znaleziony'}
+          </h2>
           <Link to="/" className="text-orange-600 hover:text-orange-700">
             Powrót do strony głównej
           </Link>
@@ -162,8 +172,8 @@ export function ProductPage() {
                       key={index}
                       onClick={() => setCurrentImageIndex(index)}
                       className={`flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-all ${currentImageIndex === index
-                          ? 'border-orange-600 ring-2 ring-orange-200'
-                          : 'border-gray-300 hover:border-gray-400'
+                        ? 'border-orange-600 ring-2 ring-orange-200'
+                        : 'border-gray-300 hover:border-gray-400'
                         }`}
                     >
                       <ImageWithFallback
@@ -213,8 +223,8 @@ export function ProductPage() {
                   <button
                     onClick={handleToggleFavorite}
                     className={`flex-1 min-w-0 px-3 sm:px-4 py-2.5 sm:py-3 border-2 rounded-lg transition-colors flex items-center justify-center gap-2 text-sm sm:text-base ${isFavorite
-                        ? 'border-orange-600 bg-orange-50 text-orange-600'
-                        : 'border-gray-300 text-gray-700 hover:bg-gray-50'
+                      ? 'border-orange-600 bg-orange-50 text-orange-600'
+                      : 'border-gray-300 text-gray-700 hover:bg-gray-50'
                       }`}
                   >
                     <Heart className={`w-5 h-5 sm:w-5 sm:h-5 flex-shrink-0 ${isFavorite ? 'fill-orange-600' : ''}`} />
@@ -337,8 +347,8 @@ export function ProductPage() {
                               <Star
                                 key={i}
                                 className={`w-3 h-3 sm:w-4 sm:h-4 ${i < review.rating
-                                    ? 'fill-yellow-400 text-yellow-400'
-                                    : 'fill-gray-200 text-gray-200'
+                                  ? 'fill-yellow-400 text-yellow-400'
+                                  : 'fill-gray-200 text-gray-200'
                                   }`}
                               />
                             ))}

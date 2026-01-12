@@ -12,7 +12,10 @@ Projekt łączy w sobie estetyczny interfejs użytkownika, dynamiczne zarządzan
 - **Responsywny Interfejs (RWD)**: Pełna obsługa urządzeń mobilnych, tabletów i desktopów.
 - **Dynamiczne Filtrowanie**: Filtrowanie produktów w czasie rzeczywistym po kategorii, cenie, stanie i lokalizacji.
 - **Koszyk Zakupowy**: Zarządzanie stanem koszyka z wykorzystaniem React Context.
+- **Backend Integration**: Pobieranie danych (produkty, szczegóły, filtrowanie) z bazy danych **Supabase**.
 - **Konto Użytkownika**: Symulacja logowania, rejestracji i panelu użytkownika.
+- **Dynamiczne Podstrony**: Podstrony produktów generowane na podstawie ID z bazy danych.
+- **Ulubione**: Funkcjonalność dodawania do ulubionych z persistencją danych.
 - **Nowoczesny Design**: Wykorzystanie TailwindCSS dla spójnego i estetycznego wyglądu.
 
 ### Quality Assurance (Playwright)
@@ -28,6 +31,7 @@ Projekt łączy w sobie estetyczny interfejs użytkownika, dynamiczne zarządzan
 | Kategoria | Technologie |
 |-----------|-------------|
 | **Core** | React 18, TypeScript, Vite |
+| **Backend** | **Supabase** (Database, API) |
 | **Styling** | TailwindCSS, Lucide React (ikony) |
 | **State** | React Context API |
 | **Testing** | **Playwright** (TypeScript) |
@@ -37,7 +41,14 @@ Projekt łączy w sobie estetyczny interfejs użytkownika, dynamiczne zarządzan
 
 ## ⚙️ Instalacja i Uruchomienie
 
-Aby uruchomić projekt lokalnie, upewnij się, że masz zainstalowane **Node.js** (wersja 16+).
+Aby uruchomić projekt lokalnie, upewnij się, że masz zainstalowane **Node.js** (wersja 16+) oraz posiadasz skonfigurowane konto **Supabase**.
+
+### Konfiguracja Zmiennych Środowiskowych
+Utwórz plik `.env` w głównym katalogu i dodaj klucze Supabase:
+```env
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
 
 ### 1. Klonowanie repozytorium
 ```bash
@@ -117,7 +128,9 @@ Wyniki testów są automatycznie kategoryzowane i zapisywane w strukturze katalo
 │   ├── components/       # Komponenty UI (Header, ProductCard, etc.)
 │   ├── pages/            # Główne widoki (HomePage, AccountPage)
 │   ├── context/          # Zarządzanie stanem (UserContext, etc.)
-│   └── data/             # Mockowane dane produktów
+│   ├── hooks/            # Custom Hooks (useProduct, useProducts)
+│   ├── lib/              # Konfiguracja bibliotek (supabase.ts)
+│   └── data/             # Typy danych (wcześniej mockowane dane)
 ├── tests/                # Testy Playwright
 │   ├── visual.spec.ts        # Testy wizualne
 │   ├── interactions.spec.ts  # Testy interakcji
