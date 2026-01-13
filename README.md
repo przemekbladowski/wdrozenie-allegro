@@ -41,14 +41,7 @@ Projekt łączy w sobie estetyczny interfejs użytkownika, dynamiczne zarządzan
 
 ## ⚙️ Instalacja i Uruchomienie
 
-Aby uruchomić projekt lokalnie, upewnij się, że masz zainstalowane **Node.js** (wersja 16+) oraz posiadasz skonfigurowane konto **Supabase**.
-
-### Konfiguracja Zmiennych Środowiskowych
-Utwórz plik `.env` w głównym katalogu i dodaj klucze Supabase:
-```env
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-```
+Aby uruchomić projekt lokalnie, upewnij się, że masz zainstalowane **Node.js** (wersja 16+)
 
 ### 1. Klonowanie repozytorium
 ```bash
